@@ -6,6 +6,7 @@ A small Go HTTP greeting service (`github.com/adam-m-holloway/team-a`).
 
 - `GET /healthz` → `200 {"status":"ok"}`
 - `GET /greet?name=X` → `200 {"message":"Hello, X"}`; empty or blank `name` → `400 {"error":"name is required"}`
+- `GET /version` → `200 {"version":"dev"}`
 - Listens on `PORT` (default `8080`).
 
 ## Layout

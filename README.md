@@ -8,6 +8,7 @@ consumer repos for the [agent-marketplace](https://github.com/adam-m-holloway/ag
 | `GET /healthz`      | `200 {"status":"ok"}`                      |
 | `GET /greet?name=X` | `200 {"message":"Hello, X"}`               |
 | `GET /greet`        | `400 {"error":"name is required"}` (empty or blank name) |
+| `GET /version`      | `200 {"version":"dev"}`                    |
 
 ## Run
 

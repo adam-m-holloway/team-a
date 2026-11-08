@@ -64,6 +64,19 @@ func TestHandler(t *testing.T) {
 			wantStatus: http.StatusMethodNotAllowed,
 		},
 		{
+			name:       "version ok",
+			method:     http.MethodGet,
+			target:     "/version",
+			wantStatus: http.StatusOK,
+			wantBody:   map[string]string{"version": "dev"},
+		},
+		{
+			name:       "wrong method on version",
+			method:     http.MethodPost,
+			target:     "/version",
+			wantStatus: http.StatusMethodNotAllowed,
+		},
+		{
 			name:       "unknown path",
 			method:     http.MethodGet,
 			target:     "/nope",
