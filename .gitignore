@@ -1,0 +1,19 @@
+# Binaries
+/server
+/bin/
+*.exe
+*.test
+*.out
+
+# Coverage
+coverage.*
+
+# Local env and editor files
+.env
+.env.*
+.DS_Store
+.idea/
+.vscode/
+
+# Claude Code local-only settings
+.claude/settings.local.json

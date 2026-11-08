@@ -1,0 +1,14 @@
+{
+  "extraKnownMarketplaces": {
+    "agent-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "adam-m-holloway/agent-marketplace"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "adr-helper@agent-marketplace": true,
+    "go-conventions@agent-marketplace": true
+  }
+}
