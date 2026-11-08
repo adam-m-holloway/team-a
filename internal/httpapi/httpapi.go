@@ -15,11 +15,16 @@ func NewHandler() http.Handler {
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /healthz", handleHealthz)
 	mux.HandleFunc("GET /greet", handleGreet)
+	mux.HandleFunc("GET /version", handleVersion)
 	return mux
 }
 
 func handleHealthz(w http.ResponseWriter, _ *http.Request) {
 	writeJSON(w, http.StatusOK, map[string]string{"status": "ok"})
+}
+
+func handleVersion(w http.ResponseWriter, _ *http.Request) {
+	writeJSON(w, http.StatusOK, map[string]string{"version": "dev"})
 }
 
 func handleGreet(w http.ResponseWriter, r *http.Request) {
